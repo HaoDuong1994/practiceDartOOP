@@ -1,0 +1,21 @@
+import 'bankModel.dart';
+import 'student.dart';
+
+void main() {
+  BankAccount accountHao = BankAccount(8.2);
+  print('get account Hao ${accountHao.balance}');
+  accountHao.balance = 10;
+  print('get account Hao ${accountHao.balance}');
+
+  final Student studentHao = Student(10, 'hao');
+  print('student Hao >>>>>>>>>>>> ${studentHao.age}');
+  // >>>> ko được >>> studentHao.age = 1000;
+}
+
+// Lưu Ý
+//Những biến bắt đầu bằng _ sẽ là biến private. Ở file khác sẽ không truy cập được nên cần phải có biến getter
+//Biến nào ko muốn để vào contructor thì có thể chỉ định giá trị mặc định
+//Getter và Setter dùng trong trường hợp 
+//Lưu ý thuộc tính nào mà chỉ định final thì sẽ ko đc thay đỗi nữa
+//1) Khi muốn bóc tách dữ liệu ra khỏi thời gian thực
+
