@@ -2,6 +2,7 @@ import 'bankModel.dart';
 import 'student.dart';
 
 void main() {
+  //Practice theory
   BankAccount accountHao = BankAccount(8.2);
   print('get account Hao ${accountHao.balance}');
   accountHao.balance = 10;
@@ -24,8 +25,4 @@ void main() {
 //khi muôn thêm xử lý logic  trước khi nhận giá trị có thể thêm logic vào hàm get 
 
 
-//Lưu ý khi dùng kế thừa
-//Cha có contructor mặc định không tham số. Thì ở class con ko cần gọi super
-//Cha chỉ có contructor tham số bắt buộc gọi super()
-//Mục đích việc gọi super là để chạy hết code của cha để code con có thể kế thừa đc giá trị và phương thức từ cha
 

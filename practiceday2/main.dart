@@ -4,12 +4,14 @@ import 'animal.dart';
 import 'cat.dart';
 
 void main() {
+  //Bài 2 + bài 3
   Car yamahaCar = Car('yamha');
   yamahaCar.honk();
   yamahaCar.move();
   yamahaCar.moveInSpeed(0);
   yamahaCar.moveInSpeed(12);
 
+  //Bài 4
   Dog chiHuaHua = Dog('chihuahua', 12, 'Hao');
   chiHuaHua.makeSound();
 
